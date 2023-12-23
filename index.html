@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta name="description" content="bookmark to save your fav sites">
+    <meta name="keywords" content="">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <section id="form-sec" class="p-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-12-lg">
+                    <h1 class="text-center pt-3 pb-5">Bookmarker</h1>
+                    <div class="bord-top-bot">
+                    <h2 class="text-center p-4"><i class="fa-solid fa-bookmark"></i>Bookmark your favorite sites<i
+                            class="fa-solid fa-bookmark"></i></h2>
+                    <label for="BookMarkName" class="d-block fw-bold"><i class="fa-solid fa-book-bookmark pe-2"></i>Site
+                        Name</label>
+                    <input id="BookMarkName" type="text" name="BookMarkName" placeholder="Bookmark Name"
+                        class="w-100 m-2 form-control">
+                    <label for="WebSiteUrl" class="d-block fw-bold"><i class="fa-solid fa-link pe-2 mt-3"></i>Site URL</label>
+                    <input id="WebSiteUrl" type="text" name="WebSiteUrl" placeholder="Website URL" class="w-100 m-2 form-control" >
+                    <button
+                        class="position-relative start-50 top-100 translate-middle rounded-2  pe-5 ps-5   border-0 text-light" id="Addbtn" onclick="SubmitSite();">Submit</button>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="table-sec">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <table class="table">
+                        <thead class="bg-light">
+                            <tr>
+                                <th>Index</th>
+                                <th>Website Name</th>
+                                <th>Visit</th>
+                                <th>Delete</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tBody" class="bg-light text-center">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+body {
+    font-family: "PT Sans Caption", sans-serif;
+    background-color: #f7ecde;
+    color: #352e28;
+}
+
+::selection {
+    background-color: #fec260;
+    color: #352e28;
+}
+
+h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 3.125rem;
+    position: relative;
+    
+}
+
+ h1::before {
+    content: "";
+    width: 24%;
+    height: 20px;
+    position: absolute;
+    bottom: 50px;
+    left:425px;
+    background-color: #fec260;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+ h1:hover::before {
+
+    height: 40px;
+}
+
+.bord-top-bot {
+    border: 2px dotted;
+    border-left: 0;
+    border-right: 0;
+}
+
+h2 {
+    font-family: 'Righteous', sans-serif;
+    font-size: 1.565rem;
+    background: linear-gradient(90deg, rgba(46, 187, 23, 0.9836309523809523) 43%, rgba(245, 137, 4, 1) 73%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+button {
+    background-color: #d1512d;
+    margin-top: 2.1rem;
+    padding: 0.5rem 0.5rem;
+    transition: 0.1s;
+}
+
+button:hover {
+    background-color: #BB4120;
+}
+
+table th {
+    text-align: center;
+    padding: 0.5rem 6.9rem;
+}
+
+table tbody tr {
+    border: 1px solid rgb(199, 199, 199);
+    border-left: 0;
+    border-right: 0;
+}
+
+table tbody td button {
+    margin: 0.01rem 0rem;
+}
+
+table tbody td .bt1 {
+    background-color: #9EB23B;
+    border: none;
+    transition: 0.1s;
+}
+
+table tbody td .bt1:hover {
+    background-color: #92a62d;
+}
+
+table tbody td .bt2 {
+    background-color: #DC3545;
+    transition: 0.1s;
+}
+
+table tbody td .bt2:hover {
+    background-color: #D30820;
+}
